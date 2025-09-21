@@ -45,7 +45,7 @@ const Navigation = () => {
           {/* Logo */}
           <button
             onClick={() => scrollToSection("#")}
-            className="text-xl font-bold text-gradient hover:scale-105 transition-bounce"
+            className="text-xl font-bold text-cosmic hover:scale-105 transition-bounce"
           >
             Ayush Singhal
           </button>
@@ -64,7 +64,7 @@ const Navigation = () => {
             ))}
             <Button
               onClick={() => scrollToSection("#contact")}
-              className="hero-gradient shadow-glow transition-bounce hover:scale-105"
+              className="cosmic-gradient space-glow transition-bounce hover:scale-105"
             >
               Get in Touch
             </Button>
@@ -96,7 +96,7 @@ const Navigation = () => {
                 ))}
                 <Button
                   onClick={() => scrollToSection("#contact")}
-                  className="hero-gradient shadow-glow transition-bounce hover:scale-105 mt-4"
+                  className="cosmic-gradient space-glow transition-bounce hover:scale-105 mt-4"
                 >
                   Get in Touch
                 </Button>

@@ -29,7 +29,7 @@ const About = () => {
     <section id="about" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-cosmic">
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -55,9 +55,9 @@ const About = () => {
           </div>
 
           <div className="space-y-6">
-            <Card className="p-6 card-gradient shadow-card border-0">
+            <Card className="p-6 card-space shadow-cosmic border border-primary/20">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mr-4 shadow-stellar">
                   <Code className="w-6 h-6 text-primary" />
                 </div>
                 <h4 className="text-xl font-semibold">Current Role</h4>
@@ -68,9 +68,9 @@ const About = () => {
               </p>
             </Card>
 
-            <Card className="p-6 card-gradient shadow-card border-0">
+            <Card className="p-6 card-space shadow-cosmic border border-accent/20">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mr-4 shadow-stellar">
                   <Brain className="w-6 h-6 text-accent" />
                 </div>
                 <h4 className="text-xl font-semibold">Education</h4>
@@ -87,7 +87,7 @@ const About = () => {
           {highlights.map((highlight, index) => (
             <Card 
               key={index} 
-              className="p-6 card-gradient shadow-card border-0 transition-smooth hover:shadow-glow hover:scale-105"
+              className="p-6 card-space shadow-nebula border border-primary/10 transition-smooth hover:shadow-stellar hover:scale-105"
             >
               <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4 mx-auto">
                 <highlight.icon className="w-6 h-6 text-primary" />

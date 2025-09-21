@@ -49,7 +49,7 @@ const Contact = () => {
     <section id="contact" className="py-20 px-4 bg-secondary/20">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-cosmic">
             Let's Connect
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -65,7 +65,7 @@ const Contact = () => {
             
             <div className="space-y-6 mb-8">
               {contactInfo.map((info, index) => (
-                <Card key={index} className="p-6 card-gradient shadow-card border-0 transition-smooth hover:shadow-glow">
+                <Card key={index} className="p-6 card-space shadow-nebula border border-primary/10 transition-smooth hover:shadow-stellar">
                   <a 
                     href={info.href}
                     className="flex items-center group"
@@ -86,13 +86,13 @@ const Contact = () => {
             </div>
 
             {/* Quick Contact CTA */}
-            <Card className="p-6 card-gradient shadow-elegant border-0">
+            <Card className="p-6 card-space shadow-cosmic border border-primary/20">
               <h4 className="text-lg font-semibold mb-3 text-foreground">Ready to Start a Conversation?</h4>
               <p className="text-muted-foreground mb-4">
                 Whether you're looking for a developer, have a project idea, or want to discuss technology, 
                 I'm always open to new opportunities and connections.
               </p>
-              <Button className="hero-gradient shadow-glow transition-bounce hover:scale-105 w-full">
+              <Button className="cosmic-gradient space-glow transition-bounce hover:scale-105 w-full">
                 <Mail className="w-4 h-4 mr-2" />
                 Send Me an Email
               </Button>
@@ -105,7 +105,7 @@ const Contact = () => {
             
             <div className="space-y-4 mb-8">
               {socialLinks.map((social, index) => (
-                <Card key={index} className="p-6 card-gradient shadow-card border-0 transition-smooth hover:shadow-glow hover:scale-105">
+                <Card key={index} className="p-6 card-space shadow-nebula border border-accent/10 transition-smooth hover:shadow-stellar hover:scale-105">
                   <a 
                     href={social.href}
                     className="flex items-center group"
@@ -129,7 +129,7 @@ const Contact = () => {
             </div>
 
             {/* Additional Information */}
-            <Card className="p-6 card-gradient shadow-card border-0">
+            <Card className="p-6 card-space shadow-nebula border border-accent/20">
               <h4 className="text-lg font-semibold mb-3 text-foreground">Current Status</h4>
               <div className="space-y-3">
                 <div className="flex items-center">

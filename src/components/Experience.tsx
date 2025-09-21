@@ -21,7 +21,7 @@ const Experience = () => {
     <section id="experience" className="py-20 px-4 bg-secondary/20">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-cosmic">
             Experience
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -30,7 +30,7 @@ const Experience = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Card className="p-8 card-gradient shadow-elegant border-0">
+          <Card className="p-8 card-space shadow-cosmic border border-primary/20">
             {/* Company and role header */}
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-6">
               <div>

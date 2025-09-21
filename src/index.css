@@ -2,51 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Professional Portfolio Design System - Tech-focused with modern gradients */
+/* Space-Themed Portfolio Design System - Cosmic dark aesthetic */
 
 @layer base {
   :root {
-    --background: 222 24% 3%;
-    --foreground: 210 40% 98%;
+    --background: 240 15% 2%;
+    --foreground: 270 20% 98%;
 
-    --card: 222 20% 6%;
-    --card-foreground: 210 40% 98%;
+    --card: 250 25% 4%;
+    --card-foreground: 270 20% 98%;
 
-    --popover: 222 20% 6%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 250 25% 4%;
+    --popover-foreground: 270 20% 98%;
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 222 24% 3%;
+    --primary: 270 100% 70%;
+    --primary-foreground: 240 15% 2%;
 
-    --secondary: 222 14% 12%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 250 20% 8%;
+    --secondary-foreground: 270 20% 98%;
 
-    --muted: 222 14% 12%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 250 20% 8%;
+    --muted-foreground: 260 15% 65%;
 
-    --accent: 266 85% 70%;
-    --accent-foreground: 222 24% 3%;
+    --accent: 290 100% 75%;
+    --accent-foreground: 240 15% 2%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 270 20% 98%;
 
-    --border: 217 32% 17%;
-    --input: 217 32% 17%;
-    --ring: 217 91% 60%;
+    --border: 250 25% 15%;
+    --input: 250 25% 15%;
+    --ring: 270 100% 70%;
 
     --radius: 0.75rem;
 
-    /* Portfolio-specific design tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(217 91% 60% / 0.8), hsl(266 85% 70% / 0.8));
-    --card-gradient: linear-gradient(145deg, hsl(222 20% 6%), hsl(222 14% 8%));
-    --text-gradient: linear-gradient(135deg, hsl(217 91% 70%), hsl(266 85% 75%));
+    /* Space-themed design tokens */
+    --cosmic-gradient: linear-gradient(135deg, hsl(270 100% 20%), hsl(290 100% 15%), hsl(240 100% 10%));
+    --nebula-gradient: linear-gradient(45deg, hsl(270 100% 70% / 0.3), hsl(290 100% 75% / 0.2), hsl(320 100% 80% / 0.1));
+    --planet-gradient: linear-gradient(135deg, hsl(270 80% 40%), hsl(290 90% 35%), hsl(250 70% 45%));
+    --aurora-gradient: linear-gradient(90deg, hsl(270 100% 70%), hsl(290 100% 75%), hsl(320 100% 80%), hsl(270 100% 70%));
+    --space-glow: 0 0 50px hsl(270 100% 70% / 0.4), 0 0 100px hsl(290 100% 75% / 0.2);
+    --card-space: linear-gradient(145deg, hsl(250 25% 4% / 0.8), hsl(260 20% 6% / 0.9));
+    --text-cosmic: linear-gradient(135deg, hsl(270 100% 80%), hsl(290 100% 85%), hsl(320 100% 90%), hsl(270 100% 80%));
     
-    --shadow-elegant: 0 10px 30px -10px hsl(217 91% 60% / 0.2);
-    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.3);
-    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.3);
+    --shadow-cosmic: 0 10px 30px -10px hsl(270 100% 70% / 0.3);
+    --shadow-nebula: 0 4px 20px hsl(290 100% 75% / 0.2);
+    --shadow-stellar: 0 0 40px hsl(270 100% 70% / 0.4);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-flow: all 2s ease-in-out infinite;
 
     --sidebar-background: 0 0% 98%;
 
@@ -66,42 +71,46 @@
   }
 
   .light {
-    --background: 210 40% 98%;
-    --foreground: 222 24% 8%;
+    --background: 240 30% 8%;
+    --foreground: 270 20% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222 24% 8%;
+    --card: 250 25% 12%;
+    --card-foreground: 270 20% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 24% 8%;
+    --popover: 250 25% 12%;
+    --popover-foreground: 270 20% 95%;
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 270 100% 65%;
+    --primary-foreground: 240 30% 8%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 24% 8%;
+    --secondary: 250 20% 16%;
+    --secondary-foreground: 270 20% 95%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 250 20% 16%;
+    --muted-foreground: 260 15% 60%;
 
-    --accent: 266 85% 70%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 290 100% 70%;
+    --accent-foreground: 240 30% 8%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 270 20% 95%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 217 91% 60%;
+    --border: 250 25% 20%;
+    --input: 250 25% 20%;
+    --ring: 270 100% 65%;
 
-    /* Light mode portfolio tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(217 91% 55% / 0.1), hsl(266 85% 65% / 0.1));
-    --card-gradient: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 40% 98%));
-    --text-gradient: linear-gradient(135deg, hsl(217 91% 50%), hsl(266 85% 60%));
+    /* Light space theme tokens */
+    --cosmic-gradient: linear-gradient(135deg, hsl(270 80% 25%), hsl(290 80% 20%), hsl(240 80% 15%));
+    --nebula-gradient: linear-gradient(45deg, hsl(270 100% 65% / 0.2), hsl(290 100% 70% / 0.15), hsl(320 100% 75% / 0.1));
+    --planet-gradient: linear-gradient(135deg, hsl(270 70% 45%), hsl(290 80% 40%), hsl(250 60% 50%));
+    --aurora-gradient: linear-gradient(90deg, hsl(270 100% 65%), hsl(290 100% 70%), hsl(320 100% 75%), hsl(270 100% 65%));
+    --space-glow: 0 0 50px hsl(270 100% 65% / 0.3), 0 0 100px hsl(290 100% 70% / 0.15);
+    --card-space: linear-gradient(145deg, hsl(250 25% 12% / 0.8), hsl(260 20% 14% / 0.9));
+    --text-cosmic: linear-gradient(135deg, hsl(270 100% 75%), hsl(290 100% 80%), hsl(320 100% 85%), hsl(270 100% 75%));
     
-    --shadow-elegant: 0 10px 30px -10px hsl(217 91% 60% / 0.15);
-    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.08);
-    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.2);
+    --shadow-cosmic: 0 10px 30px -10px hsl(270 100% 65% / 0.25);
+    --shadow-nebula: 0 4px 20px hsl(290 100% 70% / 0.15);
+    --shadow-stellar: 0 0 40px hsl(270 100% 65% / 0.3);
   }
 }
 
@@ -121,31 +130,50 @@
 }
 
 @layer components {
-  .hero-gradient {
-    background: var(--hero-gradient);
+  .cosmic-gradient {
+    background: var(--cosmic-gradient);
   }
   
-  .card-gradient {
-    background: var(--card-gradient);
+  .nebula-gradient {
+    background: var(--nebula-gradient);
   }
   
-  .text-gradient {
-    background: var(--text-gradient);
+  .card-space {
+    background: var(--card-space);
+  }
+  
+  .text-cosmic {
+    background: var(--text-cosmic);
+    background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    animation: cosmic-flow 4s ease-in-out infinite;
   }
   
-  .shadow-elegant {
-    box-shadow: var(--shadow-elegant);
+  .aurora-text {
+    background: var(--aurora-gradient);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: aurora-flow 3s ease-in-out infinite;
   }
   
-  .shadow-card {
-    box-shadow: var(--shadow-card);
+  .shadow-cosmic {
+    box-shadow: var(--shadow-cosmic);
   }
   
-  .shadow-glow {
-    box-shadow: var(--shadow-glow);
+  .shadow-nebula {
+    box-shadow: var(--shadow-nebula);
+  }
+  
+  .shadow-stellar {
+    box-shadow: var(--shadow-stellar);
+  }
+  
+  .space-glow {
+    box-shadow: var(--space-glow);
   }
   
   .transition-smooth {
@@ -160,17 +188,50 @@
     animation: float 6s ease-in-out infinite;
   }
   
+  .animate-orbit {
+    animation: orbit 20s linear infinite;
+  }
+  
+  .animate-twinkle {
+    animation: twinkle 2s ease-in-out infinite alternate;
+  }
+  
   .animate-pulse-soft {
     animation: pulse-soft 2s ease-in-out infinite;
   }
 }
 
 @layer utilities {
-  .bg-mesh {
+  .bg-space {
+    background: var(--cosmic-gradient);
+    position: relative;
+  }
+  
+  .bg-space::before {
+    content: '';
+    position: absolute;
+    inset: 0;
     background-image: 
-      radial-gradient(at 40% 20%, hsl(217 91% 60% / 0.3) 0px, transparent 50%),
-      radial-gradient(at 80% 0%, hsl(266 85% 70% / 0.2) 0px, transparent 50%),
-      radial-gradient(at 0% 50%, hsl(217 91% 40% / 0.2) 0px, transparent 50%);
+      radial-gradient(at 20% 30%, hsl(270 100% 70% / 0.4) 0px, transparent 40%),
+      radial-gradient(at 70% 10%, hsl(290 100% 75% / 0.3) 0px, transparent 50%),
+      radial-gradient(at 90% 80%, hsl(320 100% 80% / 0.2) 0px, transparent 60%),
+      radial-gradient(at 10% 90%, hsl(250 100% 65% / 0.3) 0px, transparent 45%);
+    pointer-events: none;
+  }
+  
+  .stars-field {
+    position: absolute;
+    inset: 0;
+    background-image: 
+      radial-gradient(2px 2px at 20px 30px, hsl(270 100% 90%), transparent),
+      radial-gradient(2px 2px at 40px 70px, hsl(290 100% 85%), transparent),
+      radial-gradient(1px 1px at 90px 40px, hsl(320 100% 90%), transparent),
+      radial-gradient(1px 1px at 130px 80px, hsl(270 100% 85%), transparent),
+      radial-gradient(2px 2px at 160px 30px, hsl(290 100% 90%), transparent);
+    background-repeat: repeat;
+    background-size: 200px 100px;
+    animation: stars-move 60s linear infinite;
+    opacity: 0.8;
   }
 }
 
@@ -180,6 +241,59 @@
   }
   50% {
     transform: translateY(-20px);
+  }
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes cosmic-flow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes aurora-flow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+}
+
+@keyframes stars-move {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
   }
 }
 

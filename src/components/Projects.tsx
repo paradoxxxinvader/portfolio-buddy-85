@@ -46,7 +46,7 @@ const Projects = () => {
     <section id="projects" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-cosmic">
             Featured Projects
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -57,7 +57,7 @@ const Projects = () => {
         {/* Main Projects */}
         <div className="space-y-12 mb-16">
           {projects.map((project, index) => (
-            <Card key={index} className="p-8 card-gradient shadow-elegant border-0 transition-smooth hover:shadow-glow">
+            <Card key={index} className="p-8 card-space shadow-cosmic border border-primary/10 transition-smooth hover:shadow-stellar">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className={`${index % 2 === 1 ? 'md:order-2' : ''}`}>
                   <div className="flex items-center mb-4">
@@ -100,7 +100,7 @@ const Projects = () => {
                       <Github className="w-4 h-4 mr-2" />
                       View Code
                     </Button>
-                    <Button size="sm" className="hero-gradient transition-bounce hover:scale-105">
+                    <Button size="sm" className="cosmic-gradient space-glow transition-bounce hover:scale-105">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Live Demo
                     </Button>
@@ -125,7 +125,7 @@ const Projects = () => {
           <h3 className="text-3xl font-bold mb-8 text-center">Other Notable Projects</h3>
           <div className="grid md:grid-cols-2 gap-6">
             {additionalProjects.map((project, index) => (
-              <Card key={index} className="p-6 card-gradient shadow-card border-0 transition-smooth hover:shadow-glow hover:scale-105">
+              <Card key={index} className="p-6 card-space shadow-nebula border border-accent/10 transition-smooth hover:shadow-stellar hover:scale-105">
                 <div className="flex items-start mb-4">
                   <div className="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                     <project.icon className="w-5 h-5 text-accent" />
